@@ -25,6 +25,9 @@ app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.send("Guardtrol API is online and running");
+});
 app.use("/api", rootRouter);
 // app.use("/uploads/images", express.static(path.join("uploads", "images")));
 app.use("/Emails", express.static("Emails"));
