@@ -1,6 +1,6 @@
 const Subscription = require("../models/subscriptionModel");
 const User = require("../models/user-model");
-const Invoice = require("../models/invoiceModel");
+const Invoice = require("../models/InvoiceModel");
 const mailer = require("../Emails/EmailController");
 const { formatNumberWithCommas } = require("../Utils/Functions");
 
