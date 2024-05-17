@@ -1,0 +1,191 @@
+<!DOCTYPE html style=" font-size: 15px; width: 100%; margin: 0; padding: 0; font-family: var(--ff-body); font-weight: 400; color: var(--clr-dark-500);">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link
+      href="https://db.onlinewebfonts.com/c/8611cf274fd66935b8f771ac84029521?family=Matter+SQ+Regular"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      font-family: 'Matter SQ Regular';
+      font-size: 14px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      color: var(--clr-dark-500);
+      line-height: inherit;
+    "
+  >
+    <div
+      style="
+        --max-width: 600px;
+        --padding: 1rem;
+        width: min(var(--max-width), 100% - (var(--padding) * 2));
+        margin-inline: auto;
+        margin-top: 2em;
+      "
+    >
+      <table>
+        <thead>
+          <tr>
+            <td style="background: #f7f9fc; padding: 2em">
+              <div aria-label="Guardtrol" style="max-width: 110px">
+                <!-- <img
+                  src="./Images/brand-logo.png"
+                  alt="Guardtrol"
+                  style="width: 100%"
+                /> -->
+                <img
+                  src="https://guardtrolapi.alphatrol.com/Emails/Templates/Images/brand-logo.png"
+                  alt="Guardtrol"
+                  style="width: 100%"
+                />
+              </div>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 2em">
+              <div style="max-width: 30px; margin-bottom: 2rem">
+                <!-- <img src="./Images/lock.png" alt="Lock" style="width: 100%" /> -->
+                <img
+                  src="https://guardtrolapi.alphatrol.com/Emails/Templates/Images/lock.png"
+                  alt="Lock"
+                  style="width: 100%"
+                />
+              </div>
+
+              <h1
+                style="font-weight: 600; font-size: 1rem; margin-bottom: 2rem"
+              >
+                {{header}}
+              </h1>
+
+              <p style="font-size: 0.9rem">
+                Hey {{name}},
+                <br />
+                <br />
+               {{message1}}
+              </p>
+              
+              <p style="font-size: 0.9rem; line-height: 25px">
+               {{message2}}
+              </p>
+
+              <p style="font-size: 0.9rem">
+                Best regards,
+                <br />
+                <br />
+                Guardtrol Team
+              </p>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot style="background: #cce6e6">
+          <tr>
+            <td style="font-size: 14px; padding: 2em">
+              <p style="font-size: 0.85rem; line-height: 1.3rem">
+                Need help?
+                <a href="#" style="color: #008080; font-weight: 600"
+                  >Contact our support team</a
+                >
+                or no longer interested in our newsletters?
+                <a href="#" style="color: #008080; font-weight: 600"
+                  >Unsubscribe here</a
+                >. Want to give us feedback? Let us know what you think on our
+                <a href="#" style="color: #008080; font-weight: 600"
+                  >feedback site</a
+                >.
+              </p>
+
+              <div>
+                <ul
+                  style="
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    margin: 0;
+                  "
+                >
+                  <li>
+                    <a href="#" aria-label="Facebook" style="display: block">
+                      <span style="display: inline-block; max-width: 17px">
+                        <!-- <img
+                          src="./Images/icon-facebook.png"
+                          alt="Facebook"
+                          style="width: 100%"
+                        /> -->
+                        <img
+                          src="https://guardtrolapi.alphatrol.com/Emails/Templates/Images/icon-facebook.png"
+                          alt="Facebook"
+                          style="width: 100%"
+                        />
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="LinkedIn" style="display: block">
+                      <span style="display: inline-block; max-width: 17px">
+                        <!-- <img
+                          src="./Images/icon-linkedin.png"
+                          alt="LinkedIn"
+                          style="width: 100%"
+                        /> -->
+                        <img
+                          src="https://guardtrolapi.alphatrol.com/Emails/Templates/Images/icon-linkedin.png"
+                          alt="LinkedIn"
+                          style="width: 100%"
+                        />
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Twitter" style="display: block">
+                      <span style="display: inline-block; max-width: 17px">
+                        <!-- <img
+                          src="./Images/icon-twitter.png"
+                          alt="Twitter"
+                          style="width: 100%"
+                        /> -->
+                        <img
+                          src="https://guardtrolapi.alphatrol.com/Emails/Templates/Images/icon-twitter.png"
+                          alt="Twitter"
+                          style="width: 100%"
+                        />
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Instagram" style="display: block">
+                      <span style="display: inline-block; max-width: 17px">
+                        <!-- <img
+                          src="./Images/icon-instagram.png"
+                          alt="Instagram"
+                          style="width: 100%"
+                        /> -->
+                        <img
+                          src="https://guardtrolapi.alphatrol.com/Emails/Templates/Images/icon-instagram.png"
+                          alt="Instagram"
+                          style="width: 100%"
+                        />
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!--  -->
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
