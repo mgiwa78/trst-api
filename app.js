@@ -42,24 +42,24 @@ app.use((error, req, res, next) => {
   res.status(error.statusCode).json({ message: error.message });
 });
 
-// mongoose
-//   .connect(
-//     "mongodb+srv://guardtrol:8XieP5DPyELyj75i@cluster0.qphub7h.mongodb.net/guardtroldb?retryWrites=true&w=majority&appName=Cluster0"
-//   )
-//   .then(() => {
-//     console.log("connected");
-//     app.listen(5000, "0.0.0.0");
-//   })
-//   .catch((err) => {
-//     console.log("Error in connecting to the database", err);
-//   });
-
 mongoose
-  .connect("mongodb://localhost:27017/guardtrol")
+  .connect(
+    "mongodb+srv://guardtrol:8XieP5DPyELyj75i@cluster0.qphub7h.mongodb.net/guardtroldb?retryWrites=true&w=majority&appName=Cluster0"
+  )
   .then(() => {
     console.log("connected");
-    app.listen(5000);
+    app.listen(5000, "0.0.0.0");
   })
   .catch((err) => {
     console.log("Error in connecting to the database", err);
   });
+
+// mongoose
+//   .connect("mongodb://localhost:27017/guardtrol")
+//   .then(() => {
+//     console.log("connected");
+//     app.listen(5000);
+//   })
+//   .catch((err) => {
+//     console.log("Error in connecting to the database", err);
+//   });
